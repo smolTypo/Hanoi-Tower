@@ -13,6 +13,8 @@ The Tower of Hanoi is a classic puzzle game in which the objective is to move al
 
 The Tower of Hanoi exercise was solved using recursion. The algorithm consists of a base case (when the puzzle is solved) and a recursive step (when the function calls itself with the next set of parameters). The recursive call keeps repeating until the base case is reached. In the case of the Hanoi Tower, the base case is when all the discs have been moved from tower A to tower C.
 
+First, the largest disk should be moved from the first rod to the last rod. This was done by recursively moving the smaller disks from the first rod to the middle rod, then moving the largest disk to the last rod, and then moving the smaller disks from the middle rod to the last rod. This process is repeated until all the disks are on the last rod. 
+
 ## How to Run:
 You can use the application by pressing the Make Move button. The first press will load the Hanoi Tower. Every button press after that iterates through solving the Hanoi Tower. When the Hanoi Tower is solved, on the last button press, you will receive an alert stating Tower is Finished.
 
