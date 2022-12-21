@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+
+    <h3>You can use the application by pressing the Make Move button. 
+        The first press will load the Hanoi Tower.  Every
+        button press after that iterates through solving the Hanoi Tower.
+        When the Hanoi Tower is solved, on the last 
+        button press, you will receive an alert stating Tower is Finished.
+
+    </h3>
+    <button onclick="makeMove()" id="makemove" width="40">Make Move!!!</button>
+
+    <div>
+        <h3> Enter number of disks to move (default is 5 disks): <input type="text" id="numDisk" name="numDisk" /></h3>
+    </div>
+
+
+    <div class="game" id="game"></div>
+
+    <script src="./hanoi.js"></script>
+    <script src="./tower.js"></script>
+</body>
+
+</html>
